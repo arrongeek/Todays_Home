@@ -221,6 +221,7 @@ export const RightBtnCont = styled.a`
 `;
 
 export const WriteBtn = styled.button`
+  cursor: pointer;
   ${tw`
     inline-flex
     items-center
@@ -228,12 +229,15 @@ export const WriteBtn = styled.button`
     w-24
     h-10
     bg-sky-blue
-    hover:bg-sky-blue-hover
   `}
+  
+  &:hover {
+    background: #009FCE;
+  }
   
   & {
     span {
-      ${tw`inline-flex rounded-md border-none items-center text-sm w-full text-white px-4 h-10`}
+      ${tw`inline-flex justify-center rounded-md border-none items-center text-sm w-full text-white px-4 h-10`}
     }
   }
 `;
